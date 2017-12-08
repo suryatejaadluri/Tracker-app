@@ -1,0 +1,19 @@
+{
+  "name": "trackerapp",
+  "version": "1.0.0",
+  "description": "\"# Tracker-app\"",
+  "main": "nodefunc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suryatejaadluri/Tracker-app.git"
+  },
+  "author": "suryateja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suryatejaadluri/Tracker-app/issues"
+  },
+  "homepage": "https://github.com/suryatejaadluri/Tracker-app#readme"
+}
