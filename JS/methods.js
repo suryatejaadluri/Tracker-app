@@ -22,11 +22,20 @@ document.getElementById("main").style.marginLeft = "250px";
 var count=0;
 function addlist()
 {
+  
 count++;
-var data='<li><input type="checkbox" class="filled-in" id="filled-in-box'+count+'"><label for="filled-in-box'+count+'">Filled in</label><i id="delbut" class="fa fa-times-circle" aria-hidden="true"></i> </li>';
-
+var fielddata=document.getElementById("listtb").value;    
+var data='<li id="lirow'+count+'"><input type="checkbox" class="filled-in" id="filled-in-box'+count+'"><label for="filled-in-box'+count+'">'+fielddata+'</label><i id="delbut'+count+'" onclick="deleteli('+count+')" class="fa fa-times-circle cross" aria-hidden="true"></i></li>';
 document.getElementById("listdata").innerHTML+=data;
 }
+function deleteli(no)
+{
+    
+    document.getElementById("filled-in-box"+no).outerHTML="";
+    document.getElementById("delbut"+no).outerHTML="";
+    count--;
+}
+
 //table script
 function edit_row(no)
 {

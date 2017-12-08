@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <script src="JS/methods.js"></script>
-    </head>
+    <script src="JS/nodefunc.js"></script>
+</head>
 <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="JS/materialize.js"></script>
@@ -37,13 +38,10 @@
         <div id="listbody">
             <form> 
             <input type="text" name="listitem" id="listtb" placeholder="list the item here...">
-            <button id="plus" onclick="addlist()"><i class="fa fa-plus"  aria-hidden="true"></i></button>
+            <button type="button" id="plus" onclick="addlist()"><i class="fa fa-plus"  aria-hidden="true"></i></button>
             <ul id="listdata">
-            <li><input type="checkbox" class="filled-in" id="filled-in-box" />
-            <label for="filled-in-box">Filled in</label>
-            <i id="delbut" class="fa fa-times-circle" aria-hidden="true"></i>
-            </li>
-            <li><button class="btn waves-effect waves-light" id="done" type="submit" name="action">Done
+            
+            <li><button onclick="Donelist()" class="btn waves-effect waves-light" id="done" name="action">Done
     <i class="material-icons right">send</i></button>
             </li>
             </ul>  
